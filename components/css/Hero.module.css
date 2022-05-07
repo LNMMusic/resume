@@ -1,9 +1,10 @@
 .backgroundHero {
-    background-image: url('../../public/images/background.png');
+    background-image: url('../../public/images/background-2.jpg');
+    /* background-image: url('../../public/images/background.png'); */
     /* background-image: url('../../public/images/4.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: fixed; */
+    /* background-position: fi2xed; */
 
     height: 500px;
 }
@@ -19,7 +20,7 @@
 
 .content {
     padding-inline: 3rem;
-    flex-basis: 65rem;
+    flex-basis: 70rem;
 
     display: flex;
     justify-content: flex-start;
@@ -67,7 +68,7 @@
 
     height: 4px;
     width: 100%;
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(122, 171, 177);
     
     margin-left: 0.2rem;
 }
