@@ -21,7 +21,7 @@ const Navbar = () => {
             className={styles.logo}
           />
 
-          <div className={styles.items}>
+          <div className={styles.items} aria-hidden="true">
             <h3>Skills</h3>
             <h3>Experience</h3>
             <h3>Projects</h3>
@@ -38,6 +38,11 @@ const Navbar = () => {
             objectFit="contain"
             className={styles.themeIcon}
           />
+          <svg viewBox="0 0 100 60" width="23" height="23" className={styles.menu}>
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
         </div>
 
       </div>
