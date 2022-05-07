@@ -1,0 +1,65 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    padding: 0.5rem 0;
+    background-color: rgb(133, 58, 89, 0.75);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+    border-bottom: 0.5px solid rgb(109, 31, 57, 0.50);
+}
+.content {
+    /* fixed space of 3 rem on sides */
+    padding-inline: 3rem;
+
+    /* set the width of the div of the flex */
+    /* if it shrinks it'll reduce the inner flex space */
+    flex-basis: 65rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+/* INSIDE CONTENT */
+.left {
+    display: flex;
+    gap: 3.5rem;
+}
+.left .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.left .items h3 {
+    color: white;
+}
+.left .items h3:hover {
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+}
+
+
+.right .themeIcon:hover {
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+/* MEDIA QUERYS */
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+
+}
