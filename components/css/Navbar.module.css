@@ -96,7 +96,13 @@
         align-items: center;
         gap: 1rem;
     }
-    .right .menu {
+    .right .menu[aria-hidden="true"] {
         display: block;
+    }
+    .right .menu[aria-hidden="false"] {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 2; right: 100px;
     }
 }

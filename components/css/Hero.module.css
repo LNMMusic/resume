@@ -82,6 +82,7 @@
     grid-template-columns: auto minmax(10%, 70%);
 }
 
+
 .presentation .picture {
     padding: 0 2rem;
 
@@ -90,13 +91,43 @@
     justify-content: center;
 }
 
+
 .presentation .description {
     padding: 0 1rem;
     
     grid-area: description;
-
+    padding: 3rem 0.5rem;
 }
 
+.presentation .description .descriptionTitle h1 {
+    margin-bottom: 1rem;
+}
+.presentation .description .divider {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.presentation .description .divider .dividerLine {
+    background-color: rgba(255, 255, 255, 0.50);
+    height: 2px;
+    width: 75%;
+}
+
+.presentation .description .socials {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.presentation .description .socials .icons {
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.presentation .description .socials .icons li:hover {
+    filter: brightness(0) invert(1);
+}
 
 
 
@@ -111,11 +142,22 @@
     .content .title h1 {
         font-size: 2.2rem;
     }
+    .presentation .description .socials .icons {
+        gap: 1rem;
+    }
 }
 @media (max-width: 768px) {
     .content .title h1 {
         font-size: 2rem;
     }
 }
+
+/* extra */
+@media (max-width: 650px) {
+    .content .title {
+        display: none;
+    }
+}
+
 @media (max-width: 576px) {
 }
