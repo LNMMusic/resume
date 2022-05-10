@@ -1,108 +1,120 @@
 .navbar {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 
-    padding: 0.5rem 0;
-    background-color: rgba(58, 112, 133, 0.75);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-    border-bottom: 0.5px solid rgba(31, 93, 109, 0.5);
+  padding: 0.5rem 0;
+  background-color: rgba(58, 112, 133, 0.75);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  border-bottom: 0.5px solid rgba(31, 93, 109, 0.5);
 }
-.content {
-    /* fixed space of 3 rem on sides */
-    padding-inline: 3rem;
 
-    /* set the width of the div of the flex */
-    /* if it shrinks it'll reduce the inner flex space */
-    flex-basis: 70rem;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
+.content {
+  /* fixed space of 3 rem on sides */
+  padding-inline: 3rem;
+
+  /* set the width of the div of the flex */
+  /* if it shrinks it'll reduce the inner flex space */
+  flex-basis: 70rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 /* INSIDE CONTENT */
 .left {
-    display: flex;
-    gap: 3.5rem;
+  display: flex;
+  gap: 3.5rem;
 }
+
 .left .items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
+
 .left .items h3 {
-    color: white;
+  color: white;
 }
+
 .left .items h3:hover {
-    cursor: pointer;
-    color: rgb(20, 20, 20);
+  cursor: pointer;
+  color: rgb(20, 20, 20);
 }
 
 .right .themeIcon:hover {
-    cursor: pointer;
-    filter: brightness(0) invert(1);
+  cursor: pointer;
+  filter: brightness(0) invert(1);
 }
 
 .right .menu {
-    padding: 1px;
-    display: none;
+  padding: 1px;
+  display: none;
 }
+
 .right .menu:hover {
-    cursor: pointer;
-    filter: brightness(0) invert(1);
+  cursor: pointer;
+  filter: brightness(0) invert(1);
 }
 
 
 
 
 /* MEDIA QUERYS */
-@media (max-width: 1200px) {
-}
-@media (max-width: 992px) {
-}
-@media (max-width: 768px) {
-}
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
 @media (max-width: 576px) {
-    /* MENU HAMBURGER CONTENT*/
-    .left .items[aria-hidden="true"] {
-        display: none;
-    }
-    .left .items[aria-hidden="false"] {
-        /* place on top of html */
-        position: absolute;
-        top: 0; right:  0;
-        height: 100%;
-        z-index: 1;
 
-        /* vertical */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+  /* MENU HAMBURGER CONTENT*/
+  .left .items[aria-hidden="true"] {
+    display: none;
+  }
 
-        /* background */
-        background-color: rgba(47, 84, 99, 0.5);
-        backdrop-filter: blur(10px);
-    }
-    .left .items[aria-hidden="false"] h3 {
-        padding-inline: 2rem;
-    }
+  .left .items[aria-hidden="false"] {
+    /* place on top of html */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
 
-    /* MENU HAMBURGER ICON*/
-    .right {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-    }
-    .right .menu[aria-hidden="true"] {
-        display: block;
-    }
-    .right .menu[aria-hidden="false"] {
-        display: block;
-        position: absolute;
-        z-index: 2;
-        top: 2; right: 100px;
-    }
+    /* vertical */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* background */
+    background-color: rgba(47, 84, 99, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .left .items[aria-hidden="false"] h3 {
+    padding-inline: 2rem;
+  }
+
+  /* MENU HAMBURGER ICON*/
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .right .menu[aria-hidden="true"] {
+    display: block;
+  }
+
+  .right .menu[aria-hidden="false"] {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 2;
+    right: 100px;
+  }
 }

@@ -1,3 +1,21 @@
+.skills {
+  background-color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.experiences {
+  background-color: rgba(58, 112, 133, 0.75);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); */
+
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
 .projects {
   background-color: aliceblue;
 
@@ -5,12 +23,13 @@
   justify-content: center;
   height: 500px;
 }
-.projectsContent {
+
+
+.content {
   padding-inline: 3rem;
   flex-basis: 70rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: palegoldenrod; */
 }

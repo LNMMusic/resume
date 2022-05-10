@@ -1,0 +1,88 @@
+.container {
+    background-color: aqua;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.face {
+    width: 270px;
+    height: 180px;
+    transition: 0.5s;
+}
+
+.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(90px);
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .face1 {
+    /* background: rgba(161, 97, 7, 0.9); */
+    background: rgba(50, 111, 119, 0.7);
+    filter: blur(0.9);
+    transform: translateY(0);
+}
+
+.content {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card:hover .content {
+    opacity: 1;
+}
+
+.image {
+    max-width: 70px;
+}
+
+.title {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.face2 {
+    position: relative;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-100px);
+}
+
+.card:hover .face2 {
+    transform: translateY(0);
+}
+
+.description {
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.link:hover{
+    background: #333;
+    color: #fff;
+}

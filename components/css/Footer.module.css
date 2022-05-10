@@ -1,0 +1,36 @@
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+}
+
+.footer .footerContent {
+    padding-inline: 3rem;
+    flex-basis: 70rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer .footerContent .footerItem {
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .footerContent .footerItem h3 {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.70);
+}
+
+.footer .footerContent .footerItem .footerIcon {
+    filter: brightness(0) invert(0.9);
+}

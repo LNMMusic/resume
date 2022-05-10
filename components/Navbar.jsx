@@ -1,8 +1,9 @@
 import Image from "next/image"
 import logo from "../public/icons/logo.png"
-import theme from "../public/icons/theme-mode.png"
+import icon from "../public/icons/download.png"
 import styles from './css/Navbar.module.css'
 import { useState } from "react"
+
 
 
 const Navbar = () => {
@@ -43,14 +44,15 @@ const Navbar = () => {
         </div>
 
         <div className={styles.right}>
-          <Image
-            src={theme}
-            alt="theme-mode"
-            width={28}
-            height={28}
-            objectFit="contain"
-            className={styles.themeIcon}
-          />
+          <a href="/resume.pdf" download="resume.pdf">
+            <Image
+              src={icon}
+              alt="download-icon"
+              width={23}
+              height={23}
+              objectFit="contain"
+              className={styles.themeIcon} />
+          </a>
           <svg viewBox="0 0 100 60" width="23" height="23"
           className={styles.menu} aria-hidden={menuHidden}
           onClick={(e) => handleMenu(e)}
