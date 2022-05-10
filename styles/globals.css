@@ -5,10 +5,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 0.9em;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   overflow-x: hidden;
 }
-div, h1, h2, h3, h4, h5, h6, li, ul {
+div, h1, h2, h3, h4, h5, h6, li, ul, p, button {
   padding: 0;
   margin: 0;
 }
@@ -22,3 +22,18 @@ a {
 /* * {
   box-sizing: border-box;
 } */
+
+
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 0.7rem;
+}
+body::-webkit-scrollbar-track {
+  width: 0.7rem;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  width: 0.7rem;
+  background-color: grey;
+}
