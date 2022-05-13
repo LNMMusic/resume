@@ -1,5 +1,5 @@
 .container {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .card {
@@ -8,8 +8,8 @@
 }
 
 .face {
-    width: 270px;
-    height: 180px;
+    width: 240px;
+    height: 160px;
     transition: 0.5s;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .image {
-    max-width: 70px;
+    max-width: 60px;
 }
 
 .title {
@@ -61,7 +61,7 @@
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.5);
-    transform: translateY(-100px);
+    transform: translateY(-80px);
 }
 
 .card:hover .face2 {
