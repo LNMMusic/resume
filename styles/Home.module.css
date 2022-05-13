@@ -12,11 +12,6 @@
   justify-content: center;
   padding-top: 3rem; padding-bottom: 3rem;
 }
-.skills .content .cardsSkill {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-}
 .skills .content .titleSkill {
   margin-top: 1rem; margin-bottom: 2rem;
 
@@ -24,6 +19,12 @@
   justify-content: space-between;
   align-items: center;
 }
+.skills .content .cardsSkill {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
 
 
 
@@ -51,12 +52,21 @@
 
   display: flex;
   justify-content: center;
-  height: 500px;
+  padding-top: 3rem;  padding-bottom: 5rem;
 }
-.projects .content {
+.projects .content .titleProject {
+  margin-top: 1rem; margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .content .carouselProject {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: 6rem;
 }
 
 

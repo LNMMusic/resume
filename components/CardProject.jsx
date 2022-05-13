@@ -5,7 +5,7 @@ import iconDocker from "../public/icons/docker.png"; import iconSql from "../pub
 
 
 
-const CardProject = () => {
+const CardProject = ({ title }) => {
   return (
     <div className={styles.card}>
       {/* top-left */}
@@ -15,7 +15,7 @@ const CardProject = () => {
 
       {/* top-right */}
       <div className={styles.info}>
-        <h1>Title</h1>
+        <h1>{title}</h1>
         <div className={styles.divider}>
           <div className={styles.line}></div>
         </div>

@@ -57,7 +57,19 @@ export default function Home() {
       {/* Projects */}
       <div className={styles.projects}>
         <div className={styles.content}>
-          <Carousel />
+          <div className={styles.titleProject}>
+            <Title title="Projects"/>
+            <Image
+              src={iconSkills}
+              width={45}
+              height={45}
+              objectFit="contain"
+            />
+          </div>
+
+          <div className={styles.carouselProject}>
+            <Carousel items={3}/>
+          </div>
         </div>
       </div>
 
