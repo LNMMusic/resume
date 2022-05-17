@@ -5,7 +5,8 @@ import iconTool from "../public/icons/tool.png"
 
 
 
-const CardSkill = ({ title, description }) => {
+const CardSkill = ({ title, items }) => {
+  
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -16,7 +17,18 @@ const CardSkill = ({ title, description }) => {
           </div>
         </div>
         <div className={`${styles.face} ${styles.face2}`}>
-        <div className={styles.item}>
+        {items.map((item, ix) => (
+          <div className={styles.item} key={ix}>
+            <Image
+              src={item.image}
+              width={34}
+              height={34}
+              objectFit="contain"
+            />
+            <h3>{item.name}</h3>
+          </div>
+        ))}
+        {/* <div className={styles.item}>
             <Image
               src={iconTool}
               width={34}
@@ -51,7 +63,7 @@ const CardSkill = ({ title, description }) => {
               objectFit="contain"
             />
             <h3>go</h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

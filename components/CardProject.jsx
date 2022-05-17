@@ -1,15 +1,15 @@
 import styles from "./css/CardProject.module.css"
 import Image from "next/image"
-// static
-import iconDocker from "../public/icons/docker.png"; import iconSql from "../public/icons/sql.png"; import iconPsql from "../public/icons/postgres.png"; import iconMongo from "../public/icons/mongodb.png"; import iconRust from "../public/icons/rust.png"; import iconGo from "../public/icons/golang.png"; import iconPython from "../public/icons/python.png"; import iconApi from "../public/icons/api.png";
 
 
 
-const CardProject = ({ title }) => {
+const CardProject = ({ title, description, bgImage, tools }) => {
   return (
     <div className={styles.card}>
       {/* top-left */}
-      <div className={styles.image}>
+      <div className={styles.image} style={{
+        backgroundImage: `url('${bgImage.src}')`,
+      }}>
 
       </div>
 
@@ -20,9 +20,10 @@ const CardProject = ({ title }) => {
           <div className={styles.line}></div>
         </div>
         <p>
+          {description}
+          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. */}
         </p>
       </div>
 
@@ -34,7 +35,15 @@ const CardProject = ({ title }) => {
         </div>
 
         <div className={styles.icons}>
-          <Image
+          {tools.map((tool, ix) => <Image
+            src={tool}
+            width={20}
+            height={20}
+            objectFit="contain"
+            className={styles.icon}
+            key={ix}
+          />)}
+          {/* <Image
             src={iconDocker}
             objectFit="contain"
             width={20}
@@ -61,7 +70,7 @@ const CardProject = ({ title }) => {
             width={20}
             height={20}
             className={styles.icon}
-          />
+          /> */}
         </div>
       </div>
 

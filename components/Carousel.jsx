@@ -11,6 +11,7 @@ import buttonArrow from '../public/icons/arrow.png'
 const Carousel = ({ items }) => {
   // state
   const [currentItem, setCurrentItem] = useState(0)
+  const quantity = items.length
 
   // handlers
   const handleCurrentItem = (selection) => {
@@ -21,7 +22,7 @@ const Carousel = ({ items }) => {
         }
         break;
       case "right":
-        if (currentItem !== (items-1)) {
+        if (currentItem !== (quantity-1)) {
           setCurrentItem(currentItem+1)
         }
         break;
@@ -34,29 +35,45 @@ const Carousel = ({ items }) => {
     <div className={styles.carousel}>
       {/* pagination */}
       <div className={styles.pagination}>
-        <Pagination items={items} currentItem={currentItem}/>
+        <Pagination items={quantity} currentItem={currentItem}/>
       </div>
 
       {/* buttons */}
-      <div className={styles.left} onClick={() => handleCurrentItem("left")}>
+      <div className={styles.left}>
         <img src={buttonArrow.src} alt=""
-        className={`${styles.button} ${styles.buttonLeft}`} />
+          className={`${styles.button} ${styles.buttonLeft}`}
+          onClick={() => handleCurrentItem("left")}
+        />
       </div>
-      <div className={styles.right} onClick={() => handleCurrentItem("right")}>
+      <div className={styles.right}>
         <img src={buttonArrow.src} alt=""
-        className={`${styles.button} ${styles.buttonRight}`} />
+          className={`${styles.button} ${styles.buttonRight}`}
+          onClick={() => handleCurrentItem("right")}
+        />
       </div>
 
       {/* content */}
       <div className={styles.content}>
-        {[...Array(items).keys()].map((item, ix) => {
-          if (item === currentItem) {
+        {items.map((item, ix) => {
+          if (ix === currentItem) {
             return <div className={styles.item} aria-selected="true" key={ix}>
-              <CardProject title={"selected"}/>
+              <CardProject
+                {...item}
+                // title={item.title}
+                // description={item.description}
+                // bgImage={item.bgImage}
+                // tools={item.tools}
+              />
             </div>
           } else {
             return <div className={styles.item} key={ix}>
-              <CardProject title={"none"}/>
+              <CardProject
+                {...item}
+                // title={item.title}
+                // description={item.description}
+                // bgImage={item.bgImage}
+                // tools={item.tools}
+              />
             </div>
           }
         })}

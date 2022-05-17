@@ -11,6 +11,11 @@ import Carousel from '../components/Carousel'
 import Accordion from '../components/Accordion'
 // static
 import iconSkills from '../public/icons/skills.png'; import iconExperiences from "../public/icons/experiences.png"; import iconProjects from "../public/icons/projects.png"
+import iconDbSql from '../public/icons/sql.png'; import iconDbPsql from '../public/icons/postgres.png'; import iconDbMongo from '../public/icons/mongodb.png'; import iconDbRedis from '../public/icons/redis.png'
+import iconRust from '../public/icons/rust.png'; import iconGo from '../public/icons/golang.png'; import iconPython from '../public/icons/python.png'; import iconDocker from '../public/icons/docker.png'
+import iconNode from '../public/icons/nodejs.png'; import iconHtml from '../public/icons/html.png'; import iconCss from '../public/icons/css.png'; import iconSass from '../public/icons/sass.png'
+import iconApi from "../public/icons/api.png"; import iconCli from "../public/icons/cli.png"; import iconDash from "../public/icons/dash.png"
+import imageProject1 from '../public/images/background-project-1.png'; import imageProject2 from '../public/images/background-project-2.png'; import imageProject3 from '../public/images/background-project-3.png'; import imageProject4 from '../public/images/background-project-4.jpg'
 import photograph from '../public/images/photograph-crop.jpg'
 
 
@@ -42,9 +47,33 @@ export default function Home() {
           </div>
           
           <div className={styles.cardsSkill}>
-            <CardSkill title="Database" description="testing something" />
-            <CardSkill title="Backend" description="testing something" />
-            <CardSkill title="Frontend" description="testing something" />
+            <CardSkill
+              title="Database"
+              items={[
+                {name: "SQL", image: iconDbSql},
+                {name: "PSQL", image: iconDbPsql},
+                {name: "Redis", image: iconDbRedis},
+                {name: "Mongo", image: iconDbMongo},
+              ]}
+            />
+            <CardSkill
+              title="Backend"
+              items={[
+                {name: "Rust", image: iconRust},
+                {name: "Go", image: iconGo},
+                {name: "Python", image: iconPython},
+                {name: "Docker", image: iconDocker},
+              ]}
+            />
+            <CardSkill
+              title="Frontend"
+              items={[
+                {name: "Node", image: iconNode},
+                {name: "HTML", image: iconHtml},
+                {name: "CSS", image: iconCss},
+                {name: "SASS", image: iconSass},
+              ]}
+            />
           </div>
 
         </div>
@@ -65,7 +94,14 @@ export default function Home() {
           </div>
 
           <div className={styles.accordionExperience}>
-            <Accordion />
+            <Accordion
+              items={[
+                {title: "Test 1", year: 2019, description: "this is just a simple description"},
+                {title: "Test 2", year: 2020, description: "this is just a simple description"},
+                {title: "Test 3", year: 2021, description: "this is just a simple description"},
+                {title: "Test 4", year: 2022, description: "this is just a simple description"},
+              ]}
+            />
             <div className={styles.divider}>
               <div className={styles.verticalDivider}></div>
             </div>
@@ -95,7 +131,34 @@ export default function Home() {
           </div>
 
           <div className={styles.carouselProject}>
-            <Carousel items={3}/>
+            <Carousel
+              items={[
+                {
+                  title: "FastAPI - React",
+                  description: "this is just a simple description",
+                  bgImage: imageProject1,
+                  tools: [iconDocker, iconDbPsql, iconPython, iconApi]
+                },
+                {
+                  title: "GoFiber - React",
+                  description: "this is just a simple description",
+                  bgImage: imageProject2,
+                  tools: [iconDocker, iconDbPsql, iconGo, iconApi]
+                },
+                {
+                  title: "Actix - NextJS",
+                  description: "this is just a simple description",
+                  bgImage: imageProject3,
+                  tools: [iconDocker, iconDbPsql, iconRust, iconApi]
+                },
+                {
+                  title: "CLI",
+                  description: "this is just a simple description",
+                  bgImage: imageProject4,
+                  tools: [iconDocker, iconDash, iconRust, iconCli]
+                }
+              ]}
+            />
           </div>
         </div>
       </div>

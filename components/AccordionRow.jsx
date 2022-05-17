@@ -6,7 +6,7 @@ import iconFolder from "../public/icons/folder.png"
 
 
 
-const AccordionRow = ({ hidden, year }) => {
+const AccordionRow = ({ hidden, title, year, description }) => {
   // state
   const [itemHidden, setItemHidden] = useState(hidden)
   // handlers
@@ -27,7 +27,7 @@ const AccordionRow = ({ hidden, year }) => {
   return (
     <div className={styles.accordion}>
       <div className={styles.header} aria-hidden={itemHidden} onClick={() => itemHandler()}>
-        <h2>Title</h2>
+        <h2>{title}</h2>
         <div className={styles.info}>
           <h5>{year}</h5>
           <Image
@@ -41,7 +41,8 @@ const AccordionRow = ({ hidden, year }) => {
       </div>
       <div className={styles.body} aria-hidden={itemHidden}>
         <p className={styles.content} aria-hidden={itemHidden}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit.
+          {description}
+          {/* Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit. */}
         </p>
       </div>
     </div>
