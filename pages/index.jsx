@@ -40,6 +40,7 @@ export default function Home() {
             <Title title="Skills"/>
             <Image
               src={iconSkills}
+              alt=""
               width={45}
               height={45}
               objectFit="contain"
@@ -85,6 +86,7 @@ export default function Home() {
           <div className={styles.titleExperience}>
             <Image
               src={iconExperiences}
+              alt=""
               width={40}
               height={40}
               objectFit="contain"
@@ -108,6 +110,7 @@ export default function Home() {
             <div className={styles.accordionImage}>
               <Image 
                 src={photograph}
+                alt=""
                 width={200}
                 height={300}
                 objectFit="contain"
@@ -124,6 +127,7 @@ export default function Home() {
             <Title title="Projects"/>
             <Image
               src={iconProjects}
+              alt=""
               width={45}
               height={45}
               objectFit="contain"

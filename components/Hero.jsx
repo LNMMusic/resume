@@ -71,6 +71,7 @@ const Hero = () => {
                     <li><a href="https://www.instagram.com/lucasmasierolnm/" target="_blank">
                       <Image
                         src={iconIg}
+                        alt=""
                         width={20}
                         height={20}
                         objectFit="contain"
@@ -80,6 +81,7 @@ const Hero = () => {
                     <li><a href="https://www.twitch.tv/lnmmusic" target="_blank">
                       <Image
                         src={iconTwich}
+                        alt=""
                         width={20}
                         height={20}
                         objectFit="contain"
@@ -89,6 +91,7 @@ const Hero = () => {
                     <li><a href="https://www.youtube.com/channel/UCSyMewHA9YpEnDLyPU_6I9g" target="_blank">
                       <Image
                         src={iconYt}
+                        alt=""
                         width={20}
                         height={20}
                         objectFit="contain"
@@ -98,6 +101,7 @@ const Hero = () => {
                     <li><a href="https://www.linkedin.com/in/lucas-masiero-45723114b/" target="_blank">
                       <Image
                         src={iconLd}
+                        alt=""
                         width={20}
                         height={20}
                         objectFit="contain"
@@ -107,6 +111,7 @@ const Hero = () => {
                     <li><a href="https://github.com/LNMMusic" target="_blank">
                       <Image
                         src={iconGh}
+                        alt=""
                         width={20}
                         height={20}
                         objectFit="contain"

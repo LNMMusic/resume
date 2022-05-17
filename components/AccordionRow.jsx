@@ -32,6 +32,7 @@ const AccordionRow = ({ hidden, title, year, description }) => {
           <h5>{year}</h5>
           <Image
             src={iconFolder}
+            alt=""
             width={21}
             height={21}
             objectFit="contain"

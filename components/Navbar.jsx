@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import logo from "../public/icons/logo.png"
 import icon from "../public/icons/download.png"
 import styles from './css/Navbar.module.css'
@@ -35,10 +36,10 @@ const Navbar = () => {
           />
 
           <div className={styles.items} aria-hidden={menuHidden}>
-            <h3><a href="/#skills">Skills</a></h3>
-            <h3><a href="/#experiences">Experience</a></h3>
-            <h3><a href="/#projects">Projects</a></h3>
-            <h3><a href="/#contact">Contact</a></h3>
+            <h3><Link href="/#skills">Skills</Link></h3>
+            <h3><Link href="/#experiences">Experience</Link></h3>
+            <h3><Link href="/#projects">Projects</Link></h3>
+            <h3><Link href="/#contact">Contact</Link></h3>
           </div>
         </div>
 

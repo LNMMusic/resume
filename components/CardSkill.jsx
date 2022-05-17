@@ -21,6 +21,7 @@ const CardSkill = ({ title, items }) => {
           <div className={styles.item} key={ix}>
             <Image
               src={item.image}
+              alt=""
               width={34}
               height={34}
               objectFit="contain"

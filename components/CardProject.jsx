@@ -37,6 +37,7 @@ const CardProject = ({ title, description, bgImage, tools }) => {
         <div className={styles.icons}>
           {tools.map((tool, ix) => <Image
             src={tool}
+            alt=""
             width={20}
             height={20}
             objectFit="contain"

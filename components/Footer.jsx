@@ -13,6 +13,7 @@ const Footer = () => {
         <div className={styles.footerItem}>
           <Image
             src={iconEmail}
+            alt=""
             width={20}
             height={20}
             objectFit="contain"
@@ -23,6 +24,7 @@ const Footer = () => {
         <div className={styles.footerItem}>
           <Image
             src={iconPhone}
+            alt=""
             width={20}
             height={20}
             objectFit="contain"
