@@ -27,8 +27,6 @@
 
 
 
-
-
 .experiences {
   background-color: rgba(58, 112, 133, 0.75);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
@@ -36,14 +34,37 @@
 
   display: flex;
   justify-content: center;
-  height: 500px;
+  padding-bottom: 10rem;
 }
-.experiences .content {
+.experiences .content .titleExperience {
+  margin-top: 9rem; margin-bottom: 2rem;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
+.experiences .content .titleExperience .iconExperience {
+  filter: brightness(0) invert(1);
+}
+.experiences .content .accordionExperience {
+  margin-top: 6rem;
 
+  display: grid;
+  grid-template-columns: 5fr 1fr minmax(200px, 2fr);
+}
+.experiences .content .accordionExperience .divider {
+  display: flex; justify-content: center;
+}
+.experiences .content .accordionExperience .divider .verticalDivider {
+  width: 1px;
+  background-color: rgba(240, 248, 255, 0.50);
+}
+.experiences .content .accordionExperience .accordionImage {
+  display: flex;  justify-content: center; align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
 
 
 
@@ -62,11 +83,11 @@
   align-items: center;
 }
 .projects .content .carouselProject {
+  margin-top: 6rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-top: 6rem;
 }
 
 
@@ -97,5 +118,16 @@
 @media (max-width: 576px) {         /* OFICIAL */
   .skills .content .cardsSkill {
     grid-template-columns: 1fr;
+  }
+
+  .experiences .content .accordionExperience {
+    grid-template-columns: 100%;
+    place-items: center;
+  }
+  .experiences .content .accordionExperience .divider {
+    display: none;
+  }
+  .experiences .content .accordionExperience .accordionImage {
+    display: none;
   }
 }
