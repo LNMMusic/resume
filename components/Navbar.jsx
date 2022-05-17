@@ -36,10 +36,10 @@ const Navbar = () => {
           />
 
           <div className={styles.items} aria-hidden={menuHidden}>
-            <h3>Skills</h3>
-            <h3>Experience</h3>
-            <h3>Projects</h3>
-            <h3>Contact</h3>
+            <h3><a href="/#skills">Skills</a></h3>
+            <h3><a href="/#experiences">Experience</a></h3>
+            <h3><a href="/#projects">Projects</a></h3>
+            <h3><a href="/#contact">Contact</a></h3>
           </div>
         </div>
 

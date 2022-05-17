@@ -10,7 +10,7 @@ import TitleWhite from '../components/TitleWhite'
 import Carousel from '../components/Carousel'
 import Accordion from '../components/Accordion'
 // static
-import iconSkills from '../public/icons/skills.png'
+import iconSkills from '../public/icons/skills.png'; import iconExperiences from "../public/icons/experiences.png"; import iconProjects from "../public/icons/projects.png"
 import photograph from '../public/images/photograph-crop.jpg'
 
 
@@ -28,7 +28,7 @@ export default function Home() {
       <Hero />
 
       {/* Skills */}
-      <div className={styles.skills}>
+      <div className={styles.skills} id="skills">
         <div className={styles.content}>
           
           <div className={styles.titleSkill}>
@@ -51,13 +51,13 @@ export default function Home() {
       </div>
 
       {/* Experience */}
-      <div className={styles.experiences}>
+      <div className={styles.experiences} id="experiences">
         <div className={styles.content}>
           <div className={styles.titleExperience}>
             <Image
-              src={iconSkills}
-              width={45}
-              height={45}
+              src={iconExperiences}
+              width={40}
+              height={40}
               objectFit="contain"
               className={styles.iconExperience}
             />
@@ -82,12 +82,12 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <div className={styles.projects}>
+      <div className={styles.projects} id="projects">
         <div className={styles.content}>
           <div className={styles.titleProject}>
             <Title title="Projects"/>
             <Image
-              src={iconSkills}
+              src={iconProjects}
               width={45}
               height={45}
               objectFit="contain"
@@ -100,8 +100,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      <Footer />
+      {/* Contact */}
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   )
 }

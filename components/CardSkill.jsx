@@ -1,4 +1,5 @@
 import styles from "./css/CardSkill.module.css"
+import Image from "next/image"
 // static
 import iconTool from "../public/icons/tool.png"
 
@@ -15,11 +16,41 @@ const CardSkill = ({ title, description }) => {
           </div>
         </div>
         <div className={`${styles.face} ${styles.face2}`}>
-          <div className={styles.content}>
-            <p className={styles.description}>
-              {description}
-            </p>
-            <a href="#" className={styles.link}>View More</a>
+        <div className={styles.item}>
+            <Image
+              src={iconTool}
+              width={34}
+              height={34}
+              objectFit="contain"
+            />
+            <h3>go</h3>
+          </div>
+          <div className={styles.item}>
+            <Image
+              src={iconTool}
+              width={34}
+              height={34}
+              objectFit="contain"
+            />
+            <h3>go</h3>
+          </div>
+          <div className={styles.item}>
+            <Image
+              src={iconTool}
+              width={34}
+              height={34}
+              objectFit="contain"
+            />
+            <h3>go</h3>
+          </div>
+          <div className={styles.item}>
+            <Image
+              src={iconTool}
+              width={34}
+              height={34}
+              objectFit="contain"
+            />
+            <h3>go</h3>
           </div>
         </div>
       </div>
