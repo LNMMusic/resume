@@ -96,10 +96,10 @@ export default function Home() {
           <div className={styles.accordionExperience}>
             <Accordion
               items={[
-                {title: "Test 1", year: 2019, description: "this is just a simple description"},
-                {title: "Test 2", year: 2020, description: "this is just a simple description"},
-                {title: "Test 3", year: 2021, description: "this is just a simple description"},
-                {title: "Test 4", year: 2022, description: "this is just a simple description"},
+                {title: "Seller", year: 2019, description: "Sale of books, printings, and photocopies."},
+                {title: "Freelancer", year: 2020, description: "I’ve work as an instructor of python teaching college and university students for 6 months. I also work as a freelance programmer solving data processing problems and designing and managing APIs."},
+                {title: "Web Developer - CMS and Taxes", year: 2021, description: "My tasks were to create a web application to manage company data with CRUD operations and consistency in a PostgreSQL database, via RESTFull system. The job has been done in 2 stable versions. Also, I had to connect AFIP SOAP Web Service to the App via RESTFull with PowerShell and Docker for validation."},
+                {title: "App Developer - Speech To Text", year: 2022, description: "I’ve built a desktop application to translate audio files (mainly mp3 and wav) to text, with the objective of fetching data from phone-call records from the company to be used in a future data analysis. The used storage was MongoDB Atlas."},
               ]}
             />
             <div className={styles.divider}>
@@ -135,25 +135,25 @@ export default function Home() {
               items={[
                 {
                   title: "FastAPI - React",
-                  description: "this is just a simple description",
+                  description: "Fullstack framework with authentication focused on microservices for data analytics using Python and NodeJS",
                   bgImage: imageProject1,
                   tools: [iconDocker, iconDbPsql, iconPython, iconApi]
                 },
                 {
                   title: "GoFiber - React",
-                  description: "this is just a simple description",
+                  description: "Fullstack framework with authentication focused on database transaction performance using Go and NodeJS",
                   bgImage: imageProject2,
                   tools: [iconDocker, iconDbPsql, iconGo, iconApi]
                 },
                 {
                   title: "Actix - NextJS",
-                  description: "this is just a simple description",
+                  description: "Backend framework with authentication focused on database performance and CMS feature using Rust and NodeJS",
                   bgImage: imageProject3,
                   tools: [iconDocker, iconDbPsql, iconRust, iconApi]
                 },
                 {
                   title: "CLI",
-                  description: "this is just a simple description",
+                  description: "Command Line Interface created in Rust due to its performance and save memory management",
                   bgImage: imageProject4,
                   tools: [iconDocker, iconDash, iconRust, iconCli]
                 }
