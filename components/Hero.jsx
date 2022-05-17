@@ -68,7 +68,7 @@ const Hero = () => {
 
                 <div className={styles.socials}>
                   <ul className={styles.icons}>
-                    <li><a href="https://www.instagram.com/lucasmasierolnm/" target="_blank">
+                    <li><a href="https://www.instagram.com/lucasmasierolnm/" target="_blank" rel="noreferrer">
                       <Image
                         src={iconIg}
                         alt=""
@@ -78,7 +78,7 @@ const Hero = () => {
                       />
                     </a></li>
 
-                    <li><a href="https://www.twitch.tv/lnmmusic" target="_blank">
+                    <li><a href="https://www.twitch.tv/lnmmusic" target="_blank" rel="noreferrer">
                       <Image
                         src={iconTwich}
                         alt=""
@@ -88,7 +88,7 @@ const Hero = () => {
                       />
                     </a></li>
 
-                    <li><a href="https://www.youtube.com/channel/UCSyMewHA9YpEnDLyPU_6I9g" target="_blank">
+                    <li><a href="https://www.youtube.com/channel/UCSyMewHA9YpEnDLyPU_6I9g" target="_blank" rel="noreferrer">
                       <Image
                         src={iconYt}
                         alt=""
@@ -98,7 +98,7 @@ const Hero = () => {
                       />
                     </a></li>
 
-                    <li><a href="https://www.linkedin.com/in/lucas-masiero-45723114b/" target="_blank">
+                    <li><a href="https://www.linkedin.com/in/lucas-masiero-45723114b/" target="_blank" rel="noreferrer">
                       <Image
                         src={iconLd}
                         alt=""
@@ -108,7 +108,7 @@ const Hero = () => {
                       />
                     </a></li>
 
-                    <li><a href="https://github.com/LNMMusic" target="_blank">
+                    <li><a href="https://github.com/LNMMusic" target="_blank" rel="noreferrer">
                       <Image
                         src={iconGh}
                         alt=""
