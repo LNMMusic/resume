@@ -11,6 +11,7 @@
 .footer .footerContent {
     padding-inline: 3rem;
     flex-basis: 70rem;
+    flex-wrap: wrap;
 
     display: flex;
     align-items: center;
@@ -33,4 +34,14 @@
 
 .footer .footerContent .footerItem .footerIcon {
     filter: brightness(0) invert(0.9);
+}
+
+
+
+
+/* oficial hard-coded */
+@media (max-width: 576px) {
+    .footer .footerContent {
+        justify-content: center;
+    }
 }

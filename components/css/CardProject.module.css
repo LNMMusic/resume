@@ -99,3 +99,49 @@
     cursor: pointer;
     background-color: rgba(58, 112, 133, 0.90);
 }
+
+
+/* MEDIA QUERYS */
+@media (max-width: 1200px) {        /* OFICIAL */
+
+}
+@media (max-width: 992px) {         /* OFICIAL */
+  
+}
+@media (max-width: 768px) {         /* OFICIAL */
+
+}
+@media (max-width: 576px) {         /* OFICIAL */
+
+}
+
+/* personalized hard-coded*/
+@media (max-width: 420px) {
+    .card {
+        height: 250px;
+        min-width: 250px;
+
+        grid-template-areas: 'tech'
+                             'info'
+                             'link';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+    .card .image {
+        display: none;
+    }
+    .card .tech {
+        grid-area: tech;
+    }
+    .card .info {
+        grid-area: info;
+    }
+    .card .link {
+        grid-area: link;
+    }
+}
+/* @media (max-width: 300px) {
+    .card {
+        height: 285px;
+    }
+} */

@@ -17,7 +17,6 @@ const Navbar = () => {
     } else if (isSelected === "false") {
       setMenuHidden("true")
     }
-    console.log(menuHidden)
   }
 
 
