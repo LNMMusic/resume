@@ -11,11 +11,15 @@ const Navbar = () => {
   // states
   const [menuHidden, setMenuHidden] = useState("true");
 
-  const handleMenu = (e) => {
-    let isSelected = e.target.getAttribute("aria-hidden")
-    if (isSelected === "true") {
+  const handleMenu = () => {
+    if (menuHidden === "true") {
       setMenuHidden("false")
-    } else if (isSelected === "false") {
+    } else if (menuHidden === "false") {
+      setMenuHidden("true")
+    }
+  }
+  const handleMenuLink = () => {
+    if (menuHidden === "false") {
       setMenuHidden("true")
     }
   }
@@ -36,10 +40,10 @@ const Navbar = () => {
           />
 
           <div className={styles.items} aria-hidden={menuHidden}>
-            <h3><Link href="/#skills">Skills</Link></h3>
-            <h3><Link href="/#experiences">Experience</Link></h3>
-            <h3><Link href="/#projects">Projects</Link></h3>
-            <h3><Link href="/#contact">Contact</Link></h3>
+            <h3 onClick={() => handleMenuLink()}><Link href="/#skills">Skills</Link></h3>
+            <h3 onClick={() => handleMenuLink()}><Link href="/#experiences">Experience</Link></h3>
+            <h3 onClick={() => handleMenuLink()}><Link href="/#projects">Projects</Link></h3>
+            <h3 onClick={() => handleMenuLink()}><Link href="/#contact">Contact</Link></h3>
           </div>
         </div>
 
@@ -55,7 +59,7 @@ const Navbar = () => {
           </a>
           <svg viewBox="0 0 100 60" width="23" height="23"
           className={styles.menu} aria-hidden={menuHidden}
-          onClick={(e) => handleMenu(e)}
+          onClick={() => handleMenu()}
           >
             <rect width="100" height="10"></rect>
             <rect y="30" width="100" height="10"></rect>
